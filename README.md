@@ -1,17 +1,19 @@
-# Project Name
+# Park Finder
 
 
 ## Project Summary
 
-...
+Easily find parks near you
 
 ## Developers
 
-1. ...
+1. Jorge Molina
 
-2. ...
+2. Zane Scheel
 
-3. ...
+3. Chance Telford
+
+4. Patricia Derieux
 
 ## Installation Instructions
 
@@ -35,7 +37,8 @@
 
 ## APIs
 
--
+- Google Maps 
+- OpenWeather
 
 ## MVP (Minimum Viable Product)
 
