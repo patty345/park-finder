@@ -28,11 +28,11 @@ Easily find parks near you
 
 ## Tech Stack
 
-- What languages is it written with: 
+- What languages is it written with: HTML, CSS, JavaScript
 
-- What libraries are used: 
+- What libraries are used: Bootstrap, JQUERY
 
-- Other: 
+
 
 
 ## APIs
@@ -42,7 +42,7 @@ Easily find parks near you
 
 ## MVP (Minimum Viable Product)
 
--
+- 
 
 
 ## Stretch Goals
