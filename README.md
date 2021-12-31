@@ -42,7 +42,8 @@ Easily find parks near you
 
 ## MVP (Minimum Viable Product)
 
--
+- When you type in zipcode nearby parks will pop up on google maps
+- The weather for that week will display 
 
 
 ## Stretch Goals
