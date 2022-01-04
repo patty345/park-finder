@@ -33,6 +33,14 @@ Easily find parks near you
 - What libraries are used: Foundation, JQUERY
 
 
+## User Story
+
+- As a user
+
+- I want to find a park nearby, and know the weather
+
+- So that I can plan out my day at the park
+
 
 
 ## APIs
