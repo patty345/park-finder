@@ -30,7 +30,7 @@ Easily find parks near you
 
 - What languages is it written with: HTML, CSS, JavaScript
 
-- What libraries are used: Bootstrap, JQUERY
+- What libraries are used: Foundation, JQUERY
 
 
 
