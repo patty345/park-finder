@@ -28,11 +28,11 @@ Easily find parks near you
 
 ## Tech Stack
 
-- What languages is it written with: 
+- What languages is it written with: HTML, CSS, JavaScript
 
-- What libraries are used: 
+- What libraries are used: Foundation, JQUERY
 
-- Other: 
+
 
 
 ## APIs
@@ -42,8 +42,12 @@ Easily find parks near you
 
 ## MVP (Minimum Viable Product)
 
+<<<<<<< HEAD
 - When you type in zipcode nearby parks will pop up on google maps
 - The weather for that week will display 
+=======
+- 
+>>>>>>> e6f37eede024eb373048484c420c79337f3edee9
 
 
 ## Stretch Goals
