@@ -1,11 +1,44 @@
-$(document).foundation()
-var weatherSection = $("#weatherSection");
+//$(document).foundation();
 
-function weatherBoxes() {
-    var weatherBox = "<div> <p> Hello World </p> </div>";
-    weatherSection.append(weatherBox);
-    
+// var cityInputEl = document.querySelector("#city");
+var weatherCards = $("#weather-cards");
+
+
+
+  fetch("http://www.mapquestapi.com/geocoding/v1/address?key=hA7ssNDOXBS2CZMbFpA3HIjzn3G1FtIG&location=Washington,DC").then(function (response) {
+    if(response.ok) {
+        response.json().then(function(data) {
+            console.log(data)
+        })
+    }
+})
+
+$(document).ready(function() {
+    $(".button").click(function() {
+        $("ul").append('<li></li>');
+
+        const city = document.querySelector("#city");
+        localStorage.setItem("city", city);
+    })
+})
+
+var map = document.querySelector(".map");
+
+L.mapquest.key = '6h73dOw9yQbo0VBrclSGCwuoWCGN3vHE'
+
+L.mapquest.map('map', {
+    canter: [36.1069, 112.1129],
+    layers: L.mapquest.tileLayer('map'),
+    zoom: 12
+});
+
+function weatherCardCreator() {
+    var container = $("<div class='cell small-12 medium-6'></div>");
+    var day = $("<p>1/1/11</p>");
+    var rainChance = $("<p>1.1%</p>");
+    container.append(day);
+    container.append(rainChance);
+    weatherCards.append(container);
 }
 
-
-weatherBoxes();
+weatherCardCreator();
