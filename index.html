@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/foundation.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
 </head>
 <body>
     <div class="grid">
@@ -21,12 +23,15 @@
             <li><input id="city" type="search" placeholder="Search for park here!"></li>
             <li><button type="button" class="button">Search</button></li>
           </ul>
+          <div>
+            <ul></ul>
+          </div>
           
         </div>
       
         <div class="park-display">
           <h3>Name park</h3>
-          <div class="parks"></div>
+          <div id="map"></div>
         </div>
       
         <div class="weather">

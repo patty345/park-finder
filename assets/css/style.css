@@ -81,6 +81,12 @@
     border-radius: 50px;
   }
 
+  #map {
+    padding: 250px 0 250px 0;
+    border:1px solid white;
+    color: white;
+  }
+
   body {
     background-size: 100% 100%;
     background-position: center;
