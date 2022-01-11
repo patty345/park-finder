@@ -85,6 +85,7 @@
     padding: 250px 0 250px 0;
     border:1px solid white;
     color: white;
+    max-width: none !important;
   }
 
   body {
