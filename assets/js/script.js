@@ -59,6 +59,7 @@ function weatherRequest(cityName) {
     apiKey;
   fetch(apiUrl).then(function (response) {
     response.json().then(function (data) {
+        console.log(data);
       weatherCardCreator(data, cityName);
       getParks(data.city.coord.lat, data.city.coord.lon);
     });
@@ -67,7 +68,6 @@ function weatherRequest(cityName) {
 
 $(document).ready(function () {
   $(".button").click(function () {
-    weatherCardCreator();
     var cityName = document.querySelector("#city").value;
     weatherRequest(cityName);
     console.log(cityName);
