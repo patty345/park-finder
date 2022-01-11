@@ -93,6 +93,7 @@ $(document).ready(function () {
 //   }
 
 function weatherCardCreator(data, cityName) {
+    weatherCards.empty();
     console.log(data);
     for (i = 0; i < data.list.length; i = i + 8) {
         var date = dateCreator(data, i);
