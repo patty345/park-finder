@@ -2,6 +2,7 @@
 
 // var cityInputEl = document.querySelector("#city");
 var weatherCards = $("#weather-cards");
+const city = $("#city");
 
 
 
@@ -16,9 +17,11 @@ var weatherCards = $("#weather-cards");
 $(document).ready(function() {
     $(".button").click(function() {
         weatherCardCreator();
-        $("ul").append('<li></li>');
+        var cityName = document.querySelector("#city").value;
+        console.log(cityName);
+        var history = $("#history-list")
+        $(history).append('<li><p>' + cityName + '</p></li>');
 
-        const city = document.querySelector("#city");
         localStorage.setItem("city", city);
     })
 })
