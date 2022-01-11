@@ -24,6 +24,9 @@ function weatherRequest(cityName) {
 })
 }
 
+var formSumbitHandler = function(event){
+    event.preventDefault();
+    
 $(document).ready(function() {
     $(".button").click(function() {
         weatherCardCreator();
