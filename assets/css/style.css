@@ -92,6 +92,12 @@
     background-position: center;
     animation: slide 40s infinite;
   }
+  .weather-card {
+    background-color: #083b68;
+    height: 200px;
+    width: 10px;
+    margin-bottom: 20px;
+  }
 
   @keyframes slide {
     0%{
@@ -125,10 +131,3 @@
       background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/trail-to-balanced-rock-in-big-bend-national-park-royalty-free-image-638014328-1555769897.jpg?crop=1xw:1xh;center,top&resize=980:*');
     }
   }
-
-.weather-card {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  background-color: black;
-  width: 10px;
-}
