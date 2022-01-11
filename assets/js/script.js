@@ -2,7 +2,6 @@
 
 // var cityInputEl = document.querySelector("#city");
 var apiKey = "05f629a6a4d93216a57d8401030d50a8";
-var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 var weatherCards = $("#weather-cards");
 const city = $("#city");
 var cityName = document.querySelector("#city").value;
@@ -15,8 +14,14 @@ var cityName = document.querySelector("#city").value;
     }
 })
 
-function weatherRequest(city) {
-    
+function weatherRequest(cityName) {
+    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
+    fetch(apiUrl)
+    .then(function(response) {
+    response.json().then(function(data) {
+        weatherCardCreator(data, cityName);
+    })
+})
 }
 
 $(document).ready(function() {
@@ -42,19 +47,15 @@ L.mapquest.map('map', {
     zoom: 12
 });
 
-function weatherCardCreator() {
+function weatherCardCreator(data, cityName) {
     var container = $("<div class='weather-card cell margin-1 small-12 medium-6'></div>");
     var day = $("<p>1/1/11</p>");
+    console.log(data);
     var rainChance = $("<p>1.1%</p>");
     container.append(day);
     container.append(rainChance);
     weatherCards.append(container);
 }
 
-fetch(apiUrl)
-.then(function(response) {
-    response.json().then(function(data) {
-        displayWeather(data, city);
-        console.log(data);
-    })
-})
+
+
