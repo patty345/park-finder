@@ -6,6 +6,7 @@ var weatherCards = $("#weather-cards");
 const city = $("#city");
 var cityName = document.querySelector("#city").value;
 var displayParks = document.querySelector("#map");
+//Testing 
 
 function getParks(lat, lon) {
   console.log(lat, lon);
