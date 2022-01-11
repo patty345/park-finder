@@ -95,9 +95,10 @@
   }
   .weather-card {
     background-color: #083b68;
-    height: 200px;
+    height: 150px;
     width: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
   }
 
   @keyframes slide {
