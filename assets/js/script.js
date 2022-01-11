@@ -1,6 +1,8 @@
 //$(document).foundation();
 
 // var cityInputEl = document.querySelector("#city");
+var apiKey = "05f629a6a4d93216a57d8401030d50a8";
+var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
 
   fetch("http://www.mapquestapi.com/geocoding/v1/address?key=hA7ssNDOXBS2CZMbFpA3HIjzn3G1FtIG&location=Washington,DC").then(function (response) {
     if(response.ok) {
