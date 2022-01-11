@@ -15,7 +15,7 @@ var cityName = document.querySelector("#city").value;
 })
 
 function weatherRequest(cityName) {
-    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
+    var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey;
     fetch(apiUrl)
     .then(function(response) {
     response.json().then(function(data) {
