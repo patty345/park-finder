@@ -45,7 +45,7 @@ Easily find parks near you
 
 ## APIs
 
-- Google Maps 
+- MapQuest 
 - OpenWeather
 
 ## MVP (Minimum Viable Product)
@@ -55,4 +55,6 @@ Easily find parks near you
 
 ## Stretch Goals
 
--
+-Implement option to find local fishing ponds.
+-Also implement the abilty to provide water temperature.
+-Type of species located in pond
