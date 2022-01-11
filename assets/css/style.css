@@ -22,8 +22,10 @@
   .weather,
   .footer {
     padding: 1rem;
-    border: 1px solid #ededed;
-    background-color: #ededed;
+    border: 1px solid #edededfd;
+    background-color: rgba(237, 238, 237, 0);
+    color: white;
+
   }
   
   .main-header {
@@ -63,7 +65,7 @@
         grid-column-end: 4;
     }
   }
-  
+
   .footer {
     -ms-grid-column: 1;
     grid-column-start: 1;
@@ -72,4 +74,61 @@
   
   .header {
       text-align: center;
+  }
+
+  
+  .button {
+    border-radius: 50px;
+  }
+
+  #map {
+    padding: 250px 0 250px 0;
+    border:1px solid white;
+    color: white;
+    max-width: none !important;
+  }
+
+  body {
+    background-size: 100% 100%;
+    background-position: center;
+    animation: slide 40s infinite;
+  }
+  .weather-card {
+    background-color: #083b68;
+    height: 200px;
+    width: 10px;
+    margin-bottom: 20px;
+  }
+
+  @keyframes slide {
+    0%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/el-capitan-rock-formation-at-sunset-yosemite-royalty-free-image-973952566-1555771719.jpg?resize=980:*');
+    }
+    20%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/el-capitan-rock-formation-at-sunset-yosemite-royalty-free-image-973952566-1555771719.jpg?resize=980:*');
+    }
+    20.01%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dream-lake-at-sunrise-royalty-free-image-996409334-1555766736.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
+    40%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dream-lake-at-sunrise-royalty-free-image-996409334-1555766736.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
+    40.01%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/angels-landing-zion-national-park-high-res-stock-photography-717173633-1555769107.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
+    60%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/angels-landing-zion-national-park-high-res-stock-photography-717173633-1555769107.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
+    60.01%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/grand-teton-national-park-wyoming-high-res-stock-photography-470539993-1555769337.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
+    80%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/grand-teton-national-park-wyoming-high-res-stock-photography-470539993-1555769337.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
+    80.01%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/trail-to-balanced-rock-in-big-bend-national-park-royalty-free-image-638014328-1555769897.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
+    100%{
+      background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/trail-to-balanced-rock-in-big-bend-national-park-royalty-free-image-638014328-1555769897.jpg?crop=1xw:1xh;center,top&resize=980:*');
+    }
   }
