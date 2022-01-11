@@ -15,6 +15,7 @@ var weatherCards = $("#weather-cards");
 
 $(document).ready(function() {
     $(".button").click(function() {
+        weatherCardCreator();
         $("ul").append('<li></li>');
 
         const city = document.querySelector("#city");
@@ -33,7 +34,7 @@ L.mapquest.map('map', {
 });
 
 function weatherCardCreator() {
-    var container = $("<div class='cell small-12 medium-6'></div>");
+    var container = $("<div class='weather-card cell margin-1 small-12 medium-6'></div>");
     var day = $("<p>1/1/11</p>");
     var rainChance = $("<p>1.1%</p>");
     container.append(day);
@@ -41,4 +42,3 @@ function weatherCardCreator() {
     weatherCards.append(container);
 }
 
-weatherCardCreator();
