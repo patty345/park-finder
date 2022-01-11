@@ -51,3 +51,9 @@ function weatherCardCreator() {
     weatherCards.append(container);
 }
 
+fetch(apiUrl)
+.then(function(response) {
+    response.json().then(function(data) {
+        displayWeather(data, city);
+    })
+})
