@@ -6,6 +6,7 @@ var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q={city name}&appi
 var weatherCards = $("#weather-cards");
 const city = $("#city");
 
+
   fetch("http://www.mapquestapi.com/geocoding/v1/address?key=hA7ssNDOXBS2CZMbFpA3HIjzn3G1FtIG&location=Washington,DC").then(function (response) {
     if(response.ok) {
         response.json().then(function(data) {
@@ -14,10 +15,15 @@ const city = $("#city");
     }
 })
 
+function weatherRequest(city) {
+    
+}
+
 $(document).ready(function() {
     $(".button").click(function() {
         weatherCardCreator();
         var cityName = document.querySelector("#city").value;
+        weatherRequest(cityName);
         console.log(cityName);
         var history = $("#history-list")
         $(history).append('<li><p>' + cityName + '</p></li>');
