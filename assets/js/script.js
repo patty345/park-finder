@@ -28,13 +28,20 @@ $(document).ready(function() {
 
 var map = document.querySelector(".map");
 
-L.mapquest.key = '6h73dOw9yQbo0VBrclSGCwuoWCGN3vHE'
+window.onload = function() {
+    L.mapquest.key = '6h73dOw9yQbo0VBrclSGCwuoWCGN3vHE';
 
-L.mapquest.map('map', {
-    canter: [36.1069, 112.1129],
-    layers: L.mapquest.tileLayer('map'),
-    zoom: 12
-});
+    var map = L.mapquest.map('map', {
+      center: [37.7749, -122.4194],
+      layers: L.mapquest.tileLayer('map'),
+      zoom: 12
+    });
+
+    map.addControl(L.mapquest.control());
+  }
+
+
+
 
 function weatherCardCreator() {
     var container = $("<div class='weather-card cell margin-1 small-12 medium-6'></div>");
