@@ -24,7 +24,7 @@ function getParks(lat, lon) {
       lon +
       "%2C" +
       lat +
-      "&sort=relevance&feedback=false&key=hA7ssNDOXBS2CZMbFpA3HIjzn3G1FtIG&pageSize=5&q=parks"
+      "&sort=relevance&feedback=false&key=hA7ssNDOXBS2CZMbFpA3HIjzn3G1FtIG&pageSize=4&q=parks"
   ).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
@@ -37,6 +37,7 @@ function getParks(lat, lon) {
           var pSlug = data.results[i].slug;
           var pSlugFrame = document.createElement("iframe");
 
+          pSlugFrame.setAttribute("class", "map");
           pSlugFrame.setAttribute(
             "src",
             "https://www.mapquest.com/" + pSlug,
