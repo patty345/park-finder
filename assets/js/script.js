@@ -29,6 +29,7 @@ function getParks(lat, lon) {
     if (response.ok) {
       response.json().then(function (data) {
         console.log(data);
+        parkNameList(data);
         for (i = 0; i < data.results.length; i++) {
           console.log("park name: " + data.results[i].name);
           console.log(
@@ -37,7 +38,7 @@ function getParks(lat, lon) {
           var pSlug = data.results[i].slug;
           var pSlugFrame = document.createElement("iframe");
 
-          pSlugFrame.setAttribute("class", "map");
+          pSlugFrame.setAttribute("class", "map-display");
           pSlugFrame.setAttribute(
             "src",
             "https://www.mapquest.com/" + pSlug,
@@ -67,15 +68,18 @@ function weatherRequest(cityName) {
   });
 }
 
+function parkNameList(data) {
+  for (i = 0; i < data.results.length; i++) {
+    var parkName = data.results[i].name;
+    var parkContainer = $("#park-container");
+    parkContainer.append("<li class='park-list'><p>" + parkName + "</p></li>");
+  }
+}
+
 $(document).ready(function () {
   $(".button").click(function () {
     var cityName = document.querySelector("#city").value;
     weatherRequest(cityName);
-    console.log(cityName);
-    var history = $("#history-list");
-    $(history).append("<li><p>" + cityName + "</p></li>");
-
-    localStorage.setItem("city", city);
   });
 });
 

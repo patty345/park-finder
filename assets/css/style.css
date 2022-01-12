@@ -81,6 +81,31 @@
     border-radius: 50px;
   }
 
+  .weather-card {
+    background-color: #083b68;
+    height: 150px;
+    width: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .map-display {
+    position: relative;
+    height: 400px;
+    margin: 20px;
+    margin-left: 90px;
+    width: 400px;
+  }
+  
+  .park-list {
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: -20px;
+    padding: 5px;
+    list-style: none;
+  }
+
   #map {
     border:1px solid white;
     color: white;
@@ -91,21 +116,6 @@
     background-size: 100% 100%;
     background-position: center;
     animation: slide 40s infinite;
-  }
-  .weather-card {
-    background-color: #083b68;
-    height: 150px;
-    width: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-
-  .map {
-    position: relative;
-    height: 400px;
-    margin: 20px;
-    margin-left: 90px;
-    width: 400px;
   }
 
   @keyframes slide {
