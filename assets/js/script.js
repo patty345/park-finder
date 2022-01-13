@@ -78,6 +78,10 @@ function parkNameList(data) {
 
 $(document).ready(function () {
   $(".button").click(function () {
+    var map = $("#map");
+    var parkContainer = $("#park-container");
+    parkContainer.empty();
+    map.empty();
     var cityName = document.querySelector("#city").value;
     weatherRequest(cityName);
   });
