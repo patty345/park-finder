@@ -19,6 +19,8 @@ Easily find parks near you
 
 ![screenshot-for-readme](./assets/images/Desktop-screenshot.png)
 
+![screenshot-for-readme](./assets/images/Mobile-screenshot.png)
+
 
 ## To view the project click on the links below:
 - GitHub: https://github.com/patty345/park-finder
