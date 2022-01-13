@@ -18,8 +18,8 @@ Easily find parks near you
 ## Installation Instructions
 
 To view the project click on the links below:
-GitHub: https://github.com/patty345/park-finder
-GitHub Pages: https://patty345.github.io/park-finder/
+- GitHub: https://github.com/patty345/park-finder
+- GitHub Pages: https://patty345.github.io/park-finder/
 
 
 ## Animated Gifs/Pictures of App
