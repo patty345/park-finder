@@ -17,9 +17,7 @@ Easily find parks near you
 
 ## Installation Instructions
 
-- Clone our repo to your computer
-
-- ...
+![screenshot-for-readme](./assets/images/Desktop-screenshot.png)
 
 
 ## Animated Gifs/Pictures of App
