@@ -1,12 +1,8 @@
-//$(document).foundation();
-
-// var cityInputEl = document.querySelector("#city");
 var apiKey = "05f629a6a4d93216a57d8401030d50a8";
 var weatherCards = $("#weather-cards");
 const city = $("#city");
 var cityName = document.querySelector("#city").value;
 var displayParks = document.querySelector("#map");
-//Testing 3
 
 function getParks(lat, lon) {
   console.log(lat, lon);
@@ -61,7 +57,7 @@ function weatherRequest(cityName) {
     apiKey;
   fetch(apiUrl).then(function (response) {
     response.json().then(function (data) {
-        console.log(data);
+      console.log(data);
       weatherCardCreator(data, cityName);
       getParks(data.city.coord.lat, data.city.coord.lon);
     });
@@ -83,41 +79,32 @@ $(document).ready(function () {
   });
 });
 
-// var map = document.querySelector(".map");
 
-// window.onload = function() {
-//     L.mapquest.key = '6h73dOw9yQbo0VBrclSGCwuoWCGN3vHE';
 
-//     var map = L.mapquest.map('map', {
-//       center: [37.7749, -122.4194],
-//       layers: L.mapquest.tileLayer('map'),
-//       zoom: 12
-//     });
-
-//     map.addControl(L.mapquest.control());
-//   }
 
 function weatherCardCreator(data, cityName) {
-    weatherCards.empty();
-    console.log(data);
-    for (i = 0; i < data.list.length; i = i + 8) {
-        var date = dateCreator(data, i);
-        var container = $("<div class='weather-card cell medium-12 large-6'></div>");
-        var day = $("<h5>"+ date +"</h5>");
-        var temp = $("<p>Temp: " + data.list[i].main.temp + "°F</p>");
-        var humidity = $("<p>Humidity: " + data.list[i].main.humidity + " %</p>");
-        var wind = $("<p>Wind: " + data.list[i].wind.speed + " MPH</p>")
-        container.append(day);
-        container.append(temp);
-        container.append(humidity);
-        container.append(wind);
-        weatherCards.append(container);
-    }
+  weatherCards.empty();
+  console.log(data);
+  for (i = 0; i < data.list.length; i = i + 8) {
+    var date = dateCreator(data, i);
+    var container = $(
+      "<div class='weather-card cell medium-12 large-6'></div>"
+    );
+    var day = $("<h5>" + date + "</h5>");
+    var temp = $("<p>Temp: " + data.list[i].main.temp + "°F</p>");
+    var humidity = $("<p>Humidity: " + data.list[i].main.humidity + " %</p>");
+    var wind = $("<p>Wind: " + data.list[i].wind.speed + " MPH</p>");
+    container.append(day);
+    container.append(temp);
+    container.append(humidity);
+    container.append(wind);
+    weatherCards.append(container);
+  }
 }
 
 function dateCreator(data, i) {
-    var unixTime = data.list[i].dt;
-    var date = new Date(unixTime*1000);
-    var finalDate = date.toLocaleDateString("en-US");
-    return finalDate;
+  var unixTime = data.list[i].dt;
+  var date = new Date(unixTime * 1000);
+  var finalDate = date.toLocaleDateString("en-US");
+  return finalDate;
 }
