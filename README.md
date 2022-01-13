@@ -17,9 +17,9 @@ Easily find parks near you
 
 ## Installation Instructions
 
-- Clone our repo to your computer
-
-- ...
+To view the project click on the links below:
+GitHub: https://github.com/patty345/park-finder
+GitHub Pages: https://patty345.github.io/park-finder/
 
 
 ## Animated Gifs/Pictures of App
@@ -50,7 +50,7 @@ Easily find parks near you
 
 ## MVP (Minimum Viable Product)
 
-- 
+- When you search you are able to pull the maps
 
 
 ## Stretch Goals
