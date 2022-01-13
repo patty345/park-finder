@@ -17,9 +17,9 @@ Easily find parks near you
 
 ## Installation Instructions
 
-![screenshot-for-desktop](./assets/images/Desktop-Screenshot.png)
+![screenshot-for-desktop](./assets/Images/Desktop-Screenshot.png)
 
-![screenshot-for-mobile](./assets/images/Mobile-Screenshot.png)
+![screenshot-for-mobile](./assets/Images/Mobile-Screenshot.png)
 
 
 ## To view the project click on the links below:
