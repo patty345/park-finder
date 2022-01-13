@@ -5,13 +5,11 @@ var cityName = document.querySelector("#city").value;
 var displayParks = document.querySelector("#map");
 
 function getParks(lat, lon) {
-  console.log(lat, lon);
   fetch(
     "http://www.mapquestapi.com/geocoding/v1/address?key=hA7ssNDOXBS2CZMbFpA3HIjzn3G1FtIG&location=Washington,DC"
   ).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
-        console.log(data);
       });
     }
   });
@@ -24,13 +22,8 @@ function getParks(lat, lon) {
   ).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
-        console.log(data);
         parkNameList(data);
         for (i = 0; i < data.results.length; i++) {
-          console.log("park name: " + data.results[i].name);
-          console.log(
-            "iframe src: https://www.mapquest.com/' + data.results[i].slug"
-          );
           var pSlug = data.results[i].slug;
           var pSlugFrame = document.createElement("iframe");
 
@@ -57,7 +50,6 @@ function weatherRequest(cityName) {
     apiKey;
   fetch(apiUrl).then(function (response) {
     response.json().then(function (data) {
-      console.log(data);
       weatherCardCreator(data, cityName);
       getParks(data.city.coord.lat, data.city.coord.lon);
     });
@@ -88,7 +80,6 @@ $(document).ready(function () {
 
 function weatherCardCreator(data, cityName) {
   weatherCards.empty();
-  console.log(data);
   for (i = 0; i < data.list.length; i = i + 8) {
     var date = dateCreator(data, i);
     var container = $(
