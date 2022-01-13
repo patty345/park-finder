@@ -20,6 +20,11 @@ Easily find parks near you
 ![screenshot-for-readme](./assets/images/Desktop-screenshot.png)
 
 
+## To view the project click on the links below:
+- GitHub: https://github.com/patty345/park-finder
+- GitHub Pages: https://patty345.github.io/park-finder/
+
+
 ## Animated Gifs/Pictures of App
 
 - Place various screens of your app here after they have been built
@@ -43,14 +48,16 @@ Easily find parks near you
 
 ## APIs
 
-- Google Maps 
+- MapQuest 
 - OpenWeather
 
 ## MVP (Minimum Viable Product)
 
-- 
+- When you search you are able to pull the maps
 
 
 ## Stretch Goals
 
--
+-Implement option to find local fishing ponds.
+-Also implement the abilty to provide water temperature.
+-Type of species located in pond
